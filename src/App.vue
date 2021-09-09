@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header></header>
+    <Header></Header>
     <Nav/>
     <footer></footer>
   </div>
@@ -8,10 +8,12 @@
 
 <script>
 import Nav from '@/components/navigate.vue'
+import Header from '@/components/Header.vue'
 export default {
   name: 'App',
   components: {
-    Nav
+    Nav,
+    Header
   }
 }
 </script>
