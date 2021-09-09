@@ -1,10 +1,12 @@
 $menuBackground: rgba(0, 160, 183, 0.7);
+$navigateBackground: #ffffff;
 $fontColor: #ffffff;
 $hoverColor: #02004a;
 $pcfontColor: #02004a;
 $pcHoverColor: rgba(0, 160, 183, 0.7);
 .navigate {
   position: fixed;
+  background-color: $navigateBackground;
   top: 0;
   box-sizing: border-box;
   width: 100%;
