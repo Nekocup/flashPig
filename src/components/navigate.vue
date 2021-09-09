@@ -18,8 +18,7 @@ export default {
   name: 'navigate',
   data () {
     return {
-
-      mobileToggle: false
+      mobileToggle: true
     }
   },
   methods: {
