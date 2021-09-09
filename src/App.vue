@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <i id=home></i>
     <Header/>
     <Service/>
     <Nav/>
