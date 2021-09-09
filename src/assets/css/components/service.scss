@@ -1,0 +1,72 @@
+$bgColor: #a8d3e6;
+$titleColor: #02004a;
+$fontColor: #ffffff;
+.service {
+  background-color: $bgColor;
+  position: relative;
+  .information {
+    width: 80%;
+    margin: auto;
+    h4,
+    h5 {
+      padding: 0.8rem 1rem;
+    }
+    h4 {
+      color: $titleColor;
+    }
+    > h4 {
+      text-align: center;
+      padding: 3rem 0 1.5rem 0;
+    }
+    h5 {
+      color: $fontColor;
+    }
+    li {
+      padding: 1em;
+    }
+  }
+  img {
+    display: none;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service {
+    .information {
+      width: 500px;
+      > h4 {
+        padding: 4rem 0 3rem 0;
+      }
+    }
+    img {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 20%;
+    }
+    img:last-child {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service {
+    .information {
+      width: 800px;
+      > h4 {
+        padding: 6rem 0 5rem 0;
+      }
+    }
+    img:last-child {
+      width: 15%;
+      display: block;
+      max-width: 300px;
+      left: -10px;
+      top: 0;
+      transform: translateY(50%);
+    }
+  }
+}
