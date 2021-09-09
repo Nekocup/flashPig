@@ -1,18 +1,21 @@
 <template>
   <div id="app">
     <header></header>
-    <nav></nav>
+    <Nav/>
     <footer></footer>
   </div>
 </template>
 
 <script>
-
+import Nav from '@/components/navigate.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Nav
+  }
 }
 </script>
 
 <style lang="scss">
-@import "@/assets/css/base/reset.scss";
+@import "@/assets/css/all.scss";
 </style>
