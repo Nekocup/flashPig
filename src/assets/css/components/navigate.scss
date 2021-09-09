@@ -4,7 +4,9 @@ $hoverColor: #02004a;
 $pcfontColor: #02004a;
 $pcHoverColor: rgba(0, 160, 183, 0.7);
 .navigate {
-  position: relative;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
   padding: 1em;
   box-shadow: 0px -5px 12px black;
 }
