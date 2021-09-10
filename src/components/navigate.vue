@@ -35,11 +35,11 @@ export default {
       speed: 500,
       offset: 120
     })
-    smoothScroll('a[href="#boss"]', {
+    smoothScroll('a[href="#store"]', {
       speed: 500,
       offset: 120
     })
-    smoothScroll('a[href="#store"]', {
+    smoothScroll('a[href="#manager"]', {
       speed: 500,
       offset: 120
     })
