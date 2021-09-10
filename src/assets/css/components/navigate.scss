@@ -5,12 +5,13 @@ $hoverColor: #02004a;
 $pcfontColor: #02004a;
 $pcHoverColor: rgba(0, 160, 183, 0.7);
 .navigate {
+  z-index: 10;
   position: fixed;
   background-color: $navigateBackground;
   top: 0;
   box-sizing: border-box;
   width: 100%;
-  padding: 1em;
+  padding: 0.5em;
   box-shadow: 0px -5px 12px black;
 }
 .menu {
@@ -18,14 +19,14 @@ $pcHoverColor: rgba(0, 160, 183, 0.7);
   img {
     display: block;
     width: 50px;
-    margin-top: 13.5px;
+    margin-top: 12.5px;
   }
   ul {
     background: $menuBackground;
     transition: left 0.8s;
     position: absolute;
     padding: 1em;
-    top: 112px;
+    top: 82.78px;
     width: 100%;
     box-sizing: border-box;
     li {
@@ -50,6 +51,10 @@ $pcHoverColor: rgba(0, 160, 183, 0.7);
 }
 
 @media screen and (min-width: 768px) {
+  .navigate img {
+    width: 90px;
+    height: 77px;
+  }
   .menu {
     display: flex;
     img {

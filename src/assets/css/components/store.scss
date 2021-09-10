@@ -1,0 +1,41 @@
+.store {
+  article {
+    padding: 1em;
+    margin: auto;
+    section {
+      padding: 1em;
+      img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 300px;
+        padding: 1em;
+        box-sizing: border-box;
+      }
+      h5 {
+        padding: 0.3em 0;
+      }
+      .introduction {
+        color: grey;
+        padding: 1em 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .store {
+    article {
+      padding-top: 6em;
+      display: flex;
+      flex-direction: row-reverse;
+      section {
+        width: 100%;
+        img {
+          max-width: 500px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

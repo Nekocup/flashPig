@@ -1,10 +1,8 @@
-$bgColor: #a8d3e6;
-$titleColor: #02004a;
+$serviceBg: #a8d3e6;
 $fontColor: #ffffff;
 .service {
-  background-color: $bgColor;
+  background-color: $serviceBg;
   position: relative;
-  padding: 3rem 0;
   .information {
     width: 85%;
     margin: auto;
@@ -13,7 +11,7 @@ $fontColor: #ffffff;
       padding: 0.8rem 1rem;
     }
     h4 {
-      color: $titleColor;
+      color: $articleTitle;
     }
     > h4 {
       text-align: center;
@@ -34,7 +32,6 @@ $fontColor: #ffffff;
 
 @media screen and (min-width: 768px) {
   .service {
-    padding: 4rem 0;
     .information {
       width: 650px;
       > h4 {
@@ -56,7 +53,6 @@ $fontColor: #ffffff;
 
 @media screen and (min-width: 1200px) {
   .service {
-    padding: 6rem;
     .information {
       width: 800px;
       > h4 {
