@@ -1,9 +1,10 @@
 <template>
   <div id="app">
+    <Nav/>
     <Header/>
     <Service/>
-    <Nav/>
     <Store/>
+    <Manager/>
     <footer></footer>
   </div>
 </template>
@@ -13,13 +14,15 @@ import Nav from '@/components/navigate.vue'
 import Header from '@/components/Header.vue'
 import Service from '@/components/Service.vue'
 import Store from '@/components/Store.vue'
+import Manager from '@/components/Manager.vue'
 export default {
   name: 'App',
   components: {
     Nav,
     Header,
     Service,
-    Store
+    Store,
+    Manager
   }
 }
 </script>
