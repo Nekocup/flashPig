@@ -1,6 +1,6 @@
 <template>
     <div class="navigate">
-        <img src="@/assets/image/nav/LOGO.png" alt="" width="90px" height="77px">
+        <img src="@/assets/image/nav/LOGO.png" alt="" width="75px" height="64.6px">
         <div class="menu">
         <img src="@/assets/image/nav/menu.svg" alt="" @click="menuDisplay">
         <ul :class="{menuOn:mobileToggle,menuOff:!mobileToggle}">
