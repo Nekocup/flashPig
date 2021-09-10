@@ -1,7 +1,7 @@
 <template>
     <div class="service artPadding">
         <div class="information">
-        <h4 id="service">服務項目及核心介紹</h4>
+        <h3 id="service" class="artTitle">服務項目及核心介紹</h3>
         <ul>
             <li>
                 <h4>1. 個人電腦設備維修及維護</h4>

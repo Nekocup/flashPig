@@ -4,14 +4,26 @@ $articleTitle: #02004a;
   padding: 3em 0;
 }
 
+.artTitle {
+  color: $articleTitle;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .artPadding {
     padding: 4rem 0;
+  }
+  .artTitle {
+    padding-bottom: 3rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .artPadding {
     padding: 6rem;
+  }
+  .artTitle {
+    padding-bottom: 5rem;
   }
 }
