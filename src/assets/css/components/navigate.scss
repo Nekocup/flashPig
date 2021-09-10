@@ -5,6 +5,7 @@ $hoverColor: #02004a;
 $pcfontColor: #02004a;
 $pcHoverColor: rgba(0, 160, 183, 0.7);
 .navigate {
+  z-index: 10;
   position: fixed;
   background-color: $navigateBackground;
   top: 0;
