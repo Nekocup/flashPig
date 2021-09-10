@@ -1,5 +1,5 @@
 <template>
-    <div class="service">
+    <div class="service artPadding">
         <div class="information">
         <h4 id="service">服務項目及核心介紹</h4>
         <ul>
