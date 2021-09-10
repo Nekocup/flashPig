@@ -1,15 +1,6 @@
 $bgColor: #a8d3e6;
 $titleColor: #02004a;
 $fontColor: #ffffff;
-#service::before {
-  content: "";
-  display: inline-block;
-  background-image: url("./assets/image/service/article_black_24dp.svg");
-  background-size: 100%;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 5px;
-}
 .service {
   background-color: $bgColor;
   position: relative;
@@ -35,7 +26,7 @@ $fontColor: #ffffff;
       padding: 1em;
     }
   }
-  img {
+  img > {
     display: none;
     position: absolute;
   }
@@ -50,14 +41,14 @@ $fontColor: #ffffff;
         padding-bottom: 3rem;
       }
     }
-    img {
+    > img {
       display: block;
       position: absolute;
       bottom: 0;
       right: 0;
       width: 30%;
     }
-    img:last-child {
+    > img:last-child {
       display: none;
     }
   }
@@ -72,7 +63,7 @@ $fontColor: #ffffff;
         padding-bottom: 5rem;
       }
     }
-    img:last-child {
+    > img:last-child {
       width: 15%;
       display: block;
       max-width: 300px;
