@@ -24,7 +24,7 @@ $fontColor: #ffffff;
       padding: 1em;
     }
   }
-  img {
+  > img {
     display: none;
     position: absolute;
   }
@@ -38,14 +38,14 @@ $fontColor: #ffffff;
         padding-bottom: 3rem;
       }
     }
-    img {
+    > img {
       display: block;
       position: absolute;
       bottom: 0;
       right: 0;
       width: 30%;
     }
-    img:last-child {
+    > img:last-child {
       display: none;
     }
   }
@@ -59,7 +59,7 @@ $fontColor: #ffffff;
         padding-bottom: 5rem;
       }
     }
-    img:last-child {
+    > img:last-child {
       width: 15%;
       display: block;
       max-width: 300px;
