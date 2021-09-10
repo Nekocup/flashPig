@@ -180,7 +180,7 @@ p {
   }
   h6,
   p {
-    font-size: calc(#{$baseSize} - 0.4rem);
+    font-size: $baseSize;
   }
 }
 
@@ -203,7 +203,7 @@ p {
   }
   h6,
   p {
-    font-size: calc(#{$baseSize} - 0.4rem);
+    font-size: $baseSize;
   }
 }
 
@@ -226,6 +226,6 @@ p {
   }
   h6,
   p {
-    font-size: calc(#{$baseSize} - 0.4rem);
+    font-size: $baseSize;
   }
 }
