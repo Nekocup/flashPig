@@ -1,12 +1,12 @@
 <template>
     <div class="manager artPadding">
         <div class="artTitle">
-        <img src="@/assets/image/manager/remember_me_black_24dp.svg" alt="">
+        <img src="@/assets/image/manager/remember_me_black_24dp.svg" alt="icon">
         <h3 id="manager">關於店長</h3>
         </div>
         <article>
             <section>
-                <img src="@/assets/image/manager/computer.png" alt="">
+                <img src="@/assets/image/manager/computer.png" alt="店長">
             </section>
             <section>
                 <ul>
