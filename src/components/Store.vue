@@ -10,8 +10,8 @@
                 <img src="@/assets/image/store/map.png" alt="">
                 </section>
                 <section>
-                <h5>位置 : 澎湖縣馬公市六合路300號</h5>
-                <h5>營業時間 : xx:xx ~ xx:xx</h5>
+                <h6>位置 : 澎湖縣馬公市六合路300號</h6>
+                <h6>營業時間 : xx:xx ~ xx:xx</h6>
                 <div class="introduction">
                     <p>我們位在澎湖科技大學內部，依校園地圖指示就能抵達我們店的位置。</p>
                 </div>
