@@ -1,0 +1,71 @@
+$footerColor: #dfdfdf;
+
+.footer {
+  padding-top: 1em;
+  background: #2d2424;
+  color: $footerColor;
+  article {
+    padding: 1rem;
+    .inputContent {
+      input,
+      textarea {
+        width: 100%;
+        max-width: 484px;
+        display: block;
+        margin: 1rem 0;
+        padding: 1em;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+      }
+      input {
+        height: 34px;
+      }
+    }
+    form {
+      > input {
+        display: block;
+        margin: 1rem 0;
+        color: #fff;
+        padding: 0.8rem 1rem;
+        border-radius: 6px;
+        background-color: #428bca;
+        border-color: #357ebd;
+      }
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+    img:last-child {
+      max-width: 271px;
+    }
+  }
+  .footerFont {
+    font-size: 14px;
+    margin: 1rem 0;
+  }
+  .footerFont:last-child {
+    color: #a4aeb8;
+  }
+  hr {
+    margin: 1em 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    article {
+      margin: auto;
+      max-width: 1200px;
+      display: flex;
+      section {
+        padding: 1em;
+        width: 100%;
+      }
+      section:last-child {
+        padding-top: 2em;
+      }
+    }
+  }
+}
