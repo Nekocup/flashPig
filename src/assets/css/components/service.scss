@@ -1,0 +1,71 @@
+$serviceBg: #a8d3e6;
+$fontColor: #ffffff;
+.service {
+  background-color: $serviceBg;
+  position: relative;
+  .information {
+    width: 85%;
+    margin: auto;
+    h4,
+    h5 {
+      padding: 0.8rem 1rem;
+    }
+    h4 {
+      color: $articleTitle;
+    }
+    > h4 {
+      text-align: center;
+      padding-bottom: 1.5rem;
+    }
+    h5 {
+      color: $fontColor;
+    }
+    li {
+      padding: 1em;
+    }
+  }
+  > img {
+    display: none;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service {
+    .information {
+      width: 650px;
+      > h4 {
+        padding-bottom: 3rem;
+      }
+    }
+    > img {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 30%;
+    }
+    > img:last-child {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service {
+    .information {
+      width: 800px;
+      > h4 {
+        padding-bottom: 5rem;
+      }
+    }
+    > img:last-child {
+      width: 15%;
+      display: block;
+      max-width: 300px;
+      left: -10px;
+      top: 0;
+      transform: translateY(50%);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+$managerBg: #ffbd59;
+$managerTitle: #02004a;
+$managerText: #ffffff;
+.manager {
+  background: $managerBg;
+  section {
+    img {
+      display: block;
+      width: 90%;
+      margin: auto;
+    }
+    h4 {
+      color: $managerTitle;
+    }
+    h5 {
+      color: $managerText;
+    }
+    h4,
+    h5 {
+      padding: 0.8rem 1rem;
+    }
+    li {
+      padding: 1em;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .manager {
+    article {
+      display: flex;
+      flex-direction: row-reverse;
+      section {
+        img {
+          width: 100%;
+        }
+        &:first-child {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        &:last-child {
+          padding: 1em;
+        }
+      }
+    }
+  }
+}
