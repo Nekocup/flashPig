@@ -3,7 +3,7 @@
         <div class="information">
             <div class="artTitle">
                 <img src="@/assets/image/service/article_black_24dp.svg" alt="icon">
-                <h3 id="service">服務項目及核心介紹</h3>
+                <h2 id="service">服務項目及核心介紹</h2>
             </div>
         <ul>
             <li>

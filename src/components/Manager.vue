@@ -2,7 +2,7 @@
     <div class="manager artPadding">
         <div class="artTitle">
         <img src="@/assets/image/manager/remember_me_black_24dp.svg" alt="icon">
-        <h3 id="manager">關於店長</h3>
+        <h2 id="manager">關於店長</h2>
         </div>
         <article>
             <section>
