@@ -5,7 +5,7 @@
     <Service/>
     <Store/>
     <Manager/>
-    <footer></footer>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -15,6 +15,7 @@ import Header from '@/components/Header.vue'
 import Service from '@/components/Service.vue'
 import Store from '@/components/Store.vue'
 import Manager from '@/components/Manager.vue'
+import Footer from '@/components/Footer.vue'
 export default {
   name: 'App',
   components: {
@@ -22,7 +23,8 @@ export default {
     Header,
     Service,
     Store,
-    Manager
+    Manager,
+    Footer
   }
 }
 </script>
