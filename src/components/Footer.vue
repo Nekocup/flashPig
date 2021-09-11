@@ -38,7 +38,7 @@ export default {
       const statusMsg = document.querySelector('.sendStatusMsg')
       statusMsg.innerHTML = ''
       btn.value = '送出中 ...'
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      emailjs.sendForm('service_olipqka', 'template_b9r49t1', e.target, 'user_RNeEhedPv8vkcIcx7pdxr')
         .then((result) => {
           console.log(e)
           btn.value = '送出訊息'
