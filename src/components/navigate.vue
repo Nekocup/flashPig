@@ -1,8 +1,8 @@
 <template>
     <div class="navigate">
-        <img src="@/assets/image/nav/LOGO.png" alt="" width="75px" height="64.6px">
+        <img src="@/assets/image/nav/LOGO.png" alt="LOGO" width="75px" height="64.6px">
         <div class="menu">
-        <img src="@/assets/image/nav/menu.svg" alt="" @click="menuDisplay">
+        <img src="@/assets/image/nav/menu.svg" alt="菜單" @click="menuDisplay">
         <ul :class="{menuOn:mobileToggle,menuOff:!mobileToggle}">
             <li><a href="#">首頁</a></li>
             <li><a href="#service">提供服務</a></li>
