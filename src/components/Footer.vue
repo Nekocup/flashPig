@@ -14,12 +14,12 @@
         </form>
         </section>
         <section>
-        <img src="@/assets/image/footer/LOGO2.png" alt="">
+        <img src="@/assets/image/footer/LOGO2.png" alt="LOGO">
         <hr>
             <div class="footerFont">聯絡資訊</div>
             <div class="footerFont">電話 : 0934031102</div>
             <div class="footerFont">信箱 : bohau888@gmail.com</div>
-            <img src="@/assets/image/footer/QRCODE.png" alt="">
+            <img src="@/assets/image/footer/QRCODE.png" alt="QRCODE">
             <div class="footerFont ">© 2021 FlashPig.All rights reserved.</div>
         </section>
     </article>
