@@ -6,7 +6,7 @@
         <form @submit.prevent="sendEmail">
             <div class="inputContent">
             <input type="text" name="name" placeholder="姓名">
-            <input type="email" name="email" placeholder="信箱">
+            <input type="email" name="email" placeholder="信箱" id="InputEM">
             <textarea  name= "question" cols="30" rows="10" placeholder="告訴我們你的問題"/>
             </div>
             <input type="submit" value="送出訊息" id="sendbtn">
@@ -27,6 +27,7 @@
 </template>
 <script>
 import emailjs from 'emailjs-com'
+
 export default {
   data () {
     return {
@@ -36,19 +37,33 @@ export default {
     sendEmail: (e) => {
       const btn = document.getElementById('sendbtn')
       const statusMsg = document.querySelector('.sendStatusMsg')
+      const InputEM = document.querySelector('#InputEM')
       statusMsg.innerHTML = ''
       btn.value = '送出中 ...'
-      emailjs.sendForm('service_olipqka', 'template_b9r49t1', e.target, 'user_RNeEhedPv8vkcIcx7pdxr')
-        .then((result) => {
-          console.log(e)
-          btn.value = '送出訊息'
+      let blakcList = []
+      const axios = require('axios').default
+      axios.get('https://nekocup.github.io/api/blacklist.json').then((data) => {
+        blakcList = data.data.email
+      }).then(() => {
+        if (blakcList.find(data => data === InputEM.value)) {
           statusMsg.innerHTML = '送出成功'
-          console.log('SUCCESS!', result.status, result.text)
-        }, (error) => {
-          btn.value = '送出訊息'
-          statusMsg.innerHTML = '送出失敗'
-          console.log('FAILED...', error)
-        })
+          setTimeout(() => {
+            btn.value = '送出訊息'
+          }, 1000)
+        } else {
+          emailjs.sendForm('service_olipqka', 'template_b9r49t1', e.target, 'user_RNeEhedPv8vkcIcx7pdxr')
+            .then((result) => {
+              console.log(e)
+              btn.value = '送出訊息'
+              statusMsg.innerHTML = '送出成功'
+              console.log('SUCCESS!', result.status, result.text)
+            }, (error) => {
+              btn.value = '送出訊息'
+              statusMsg.innerHTML = '送出失敗'
+              console.log('FAILED...', error)
+            })
+        }
+      })
     }
   }
 }
