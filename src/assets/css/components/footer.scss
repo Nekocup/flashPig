@@ -6,6 +6,7 @@ $footerColor: #dfdfdf;
   color: $footerColor;
   article {
     padding: 1rem;
+    padding-bottom: 0.5rem;
     .inputContent {
       input,
       textarea {
@@ -15,7 +16,7 @@ $footerColor: #dfdfdf;
         margin: 1rem 0;
         padding: 1em;
         box-sizing: border-box;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid #ccc;
       }
       input {
@@ -31,6 +32,7 @@ $footerColor: #dfdfdf;
         border-radius: 6px;
         background-color: #428bca;
         border-color: #357ebd;
+        -webkit-appearance: none;
       }
     }
     img {
@@ -49,7 +51,7 @@ $footerColor: #dfdfdf;
     color: #a4aeb8;
   }
   hr {
-    margin: 1em 0;
+    margin: 0.5em 0;
   }
 }
 
@@ -60,7 +62,7 @@ $footerColor: #dfdfdf;
       max-width: 1200px;
       display: flex;
       section {
-        padding: 1em;
+        padding: 0.8em;
         width: 100%;
       }
       section:last-child {
