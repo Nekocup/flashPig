@@ -8,7 +8,7 @@ $fontColor: #ffffff;
     margin: auto;
     h4,
     h5 {
-      padding: 0.8rem 1rem;
+      padding: 0.5rem 1rem 0 1rem;
     }
     h4 {
       color: $articleTitle;
@@ -21,7 +21,7 @@ $fontColor: #ffffff;
       color: $fontColor;
     }
     li {
-      padding: 1em;
+      padding: 0.8em;
     }
   }
   > img {
