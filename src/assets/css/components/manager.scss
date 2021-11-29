@@ -9,15 +9,10 @@ $managerText: #ffffff;
       width: 90%;
       margin: auto;
     }
-    h4 {
+    p {
       color: $managerTitle;
-    }
-    h5 {
-      color: $managerText;
-    }
-    h4,
-    h5 {
-      padding: 0.8rem 1rem;
+      padding: 0.5em 1em;
+      font-weight: 600;
     }
     li {
       padding: 1em;
@@ -30,17 +25,21 @@ $managerText: #ffffff;
     article {
       display: flex;
       flex-direction: row-reverse;
+      width: 100%;
+      max-width: 1200px;
       section {
         img {
           width: 100%;
+          transform: translateY(-15px);
         }
         &:first-child {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 100%;
+          width: 40%;
         }
         &:last-child {
+          width: 60%;
           padding: 1em;
         }
       }
