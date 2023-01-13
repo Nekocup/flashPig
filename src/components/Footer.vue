@@ -30,25 +30,36 @@ import emailjs from 'emailjs-com'
 export default {
   data () {
     return {
+      isTimeOut: true
     }
   },
   methods: {
-    sendEmail: (e) => {
+    sendEmail (e) {
       const btn = document.getElementById('sendbtn')
       const statusMsg = document.querySelector('.sendStatusMsg')
-      statusMsg.innerHTML = ''
-      btn.value = '送出中 ...'
-      emailjs.sendForm('service_olipqka', 'template_b9r49t1', e.target, 'user_RNeEhedPv8vkcIcx7pdxr')
-        .then((result) => {
-          console.log(e)
-          btn.value = '送出訊息'
-          statusMsg.innerHTML = '送出成功'
-          console.log('SUCCESS!', result.status, result.text)
-        }, (error) => {
-          btn.value = '送出訊息'
-          statusMsg.innerHTML = '送出失敗'
-          console.log('FAILED...', error)
-        })
+      const _this = this
+      if (this.isTimeOut === true) {
+        statusMsg.innerHTML = ''
+        btn.value = '送出中 ...'
+        emailjs.sendForm('service_olipqka', 'template_b9r49t1', e.target, 'user_RNeEhedPv8vkcIcx7pdxr')
+          .then((result) => {
+            console.log(e)
+            btn.value = '送出訊息'
+            statusMsg.innerHTML = '送出成功'
+            console.log('SUCCESS!', result.status, result.text)
+          }, (error) => {
+            btn.value = '送出訊息'
+            statusMsg.innerHTML = '送出失敗'
+            console.log('FAILED...', error)
+          })
+      } else {
+        statusMsg.innerHTML = '請等待60秒後再傳送訊息'
+      }
+      this.isTimeOut = false
+      setTimeout(function () {
+        _this.isTimeOut = true
+        console.log('ss')
+      }, 60000)
     }
   }
 }
