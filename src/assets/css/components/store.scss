@@ -1,4 +1,16 @@
 .store {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  .outmap {
+    display: flex;
+    justify-content: center;    
+    align-content: center; 
+  }
+  .map {
+    width: 100%;
+    max-width: 1200px;
+  }
   article {
     padding: 0.5em 1em;
     margin: auto;
@@ -12,14 +24,24 @@
         padding: 2em;
         box-sizing: border-box;
       }
+      p:first-child {
+        font-weight:bold
+      }
       p {
+        color: rgb(97, 45, 45);
         padding: 0.3em 0;
-        font-size: 2rem;
       }
       .introduction {
         color: grey;
         padding: 1em 0;
       }
+    }
+    section:last-child {
+      background-color: #e5e5f7;
+      opacity: 1;
+      background-image: radial-gradient(circle at center center, #ffffff, #e5e5f7), repeating-radial-gradient(circle at center center, #ffffff, #ffffff, 4px, transparent 8px, transparent 4px);
+      background-blend-mode: multiply;
+      border-radius: 20px;
     }
   }
 }

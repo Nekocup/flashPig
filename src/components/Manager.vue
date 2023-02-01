@@ -5,6 +5,7 @@
         <h2 id="manager">關於店長</h2>
         </div>
         <article>
+            <img class="bgimg" src="@/assets/image/store/Vector1.svg" alt="">
             <section>
                 <img src="@/assets/image/manager/computer.png" alt="店長">
             </section>

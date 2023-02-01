@@ -1,6 +1,8 @@
 $footerColor: #dfdfdf;
 
 .footer {
+  position: relative;
+  z-index: 1;
   padding-top: 1em;
   background: #2d2424;
   color: $footerColor;

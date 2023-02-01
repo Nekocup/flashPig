@@ -3,7 +3,25 @@ $managerTitle: #02004a;
 $managerText: #ffffff;
 .manager {
   background: $managerBg;
+  article {
+  position: relative;
+  }
+  .artTitle {
+    position: relative;
+    z-index: 1;
+  }
+  .bgimg {
+    position:absolute;
+    right: -100px;
+    left: 0;
+    z-index: 0;
+    transform: rotate(35deg) scale(2);
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+  }
   section {
+    position: relative;
     img {
       display: block;
       width: 90%;
@@ -23,6 +41,9 @@ $managerText: #ffffff;
       padding: 1em;
     }
   }
+  section {
+    z-index: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -33,6 +54,7 @@ $managerText: #ffffff;
       section {
         img {
           width: 100%;
+          max-width: 780px;
         }
         &:first-child {
           display: flex;
@@ -42,7 +64,7 @@ $managerText: #ffffff;
         }
         &:last-child {
           padding: 1em;
-          padding-top: 2em;
+          padding-top: 3em;
         }
       }
     }
