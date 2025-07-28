@@ -7,7 +7,8 @@
             <div class="inputContent">
             <input type="text" name="name" placeholder="姓名">
             <input type="email" name="email" placeholder="信箱">
-            <textarea  name= "question" cols="30" rows="10" placeholder="告訴我們你的問題"/>
+            <input type="text" name="phone" placeholder="電話">
+            <textarea  name= "question" cols="30" rows="10" placeholder="告訴我們您的問題"/>
             </div>
             <input type="submit" value="送出訊息" id="sendbtn">
             <div class="sendStatusMsg"></div>
